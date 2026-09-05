@@ -1,0 +1,79 @@
+:root{
+  --site-bg: #0B100D;
+  --ocean: #0066B2;
+  --sun: #F26522;
+}
+html,body{height:100%;}
+/* small custom styles complementing Tailwind */
+.product-card { will-change: transform; transition: opacity .25s ease, transform .25s ease; }
+.product-card.is-filtered-out { display: none; }
+.inquire-btn { transition: transform .15s ease, box-shadow .15s ease; }
+#inquireModal { z-index: 9999 }
+.inquire-btn:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(242,101,34,0.12); }
+.filter-btn{ transition: all .12s ease }
+#whatsappWidget { animation: pulse 2.6s infinite; }
+#ambient-bg{ position:fixed; inset:0; pointer-events:none; opacity:.15; background-image: radial-gradient(circle at 20% 10%, rgba(0,102,178,0.06) 1px, transparent 1px); background-size:24px 24px; }
+
+/* product card unified style for enterprise look */
+.product-card > div{
+  background-color: rgba(255,255,255,0.95);
+  border-radius: 1rem;
+  border: 1px solid rgba(226,232,240,0.9);
+  box-shadow: 0 4px 20px -4px rgba(0,0,0,0.05);
+  transition: all .3s ease;
+}
+.product-card > div:hover{ transform: translateY(-6px); box-shadow: 0 12px 30px -6px rgba(0,102,178,0.15); border-color: rgba(0,102,178,0.25); }
+
+/* Hero metric card */
+.metrics-card{ background-color:#0f1724; color:white; border-radius:1.5rem; padding:1.25rem; box-shadow: 0 20px 40px -20px rgba(2,6,23,0.6); border:1px solid rgba(15,23,36,0.6); }
+.metrics-card .stat{ display:flex; align-items:center; justify-content:space-between; padding:0.5rem 0; }
+.metrics-card .dot{ width:10px; height:10px; border-radius:9999px; background:#16a34a; box-shadow:0 0 8px rgba(16,185,129,0.4); margin-right:0.5rem; }
+
+/* Buttons and micro-animations */
+.btn-primary{ transition: all .2s ease-out; }
+.btn-primary:hover{ transform: translateY(-2px); box-shadow: 0 8px 20px -4px rgba(242,101,34,0.35); }
+
+/* WhatsApp bounce */
+.whatsapp-anim{ animation: bounce 2.6s infinite; }
+
+/* hide native scrollbar for carousel */
+#videoCarousel{ -ms-overflow-style:none; scrollbar-width:none }
+#videoCarousel::-webkit-scrollbar{display:none}
+
+
+/* Light theme headings */
+h1,h2,h3{ color:#0F172A !important }
+
+.established-label {
+  font-size: 0.42rem;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-style: italic;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #F26522;
+  line-height: 1.2;
+}
+
+.established-date {
+  font-size: clamp(1.1rem, 1.4vw, 1.8rem);
+  font-family: Georgia, 'Times New Roman', serif;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: #0f172a;
+  line-height: 1.1;
+}
+
+/* hide native scrollbar for carousel */
+#videoCarousel{ -ms-overflow-style:none; scrollbar-width:none }
+#videoCarousel::-webkit-scrollbar{display:none}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(242,101,34,0.25)}70%{box-shadow:0 0 0 10px rgba(242,101,34,0)}100%{box-shadow:0 0 0 0 rgba(242,101,34,0)}}
+
+/* Mobile-friendly snap scrollbar styling */
+#videoCarousel::-webkit-scrollbar{height:8px}
+#videoCarousel::-webkit-scrollbar-thumb{background:rgba(255,255,255,0.08);border-radius:8px}
+
+/* Focus outlines for accessibility */
+:focus{outline: 3px solid rgba(0,102,178,0.18);outline-offset:2px}
+
+/* Modal visibility */
+#inquiryModal.flex{display:flex}
