@@ -31,7 +31,7 @@
     }
   </script>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=2.0">
 </head>
 <body class="bg-slate-50/50 text-slate-600 font-sans relative">
   <div id="ambient-bg" aria-hidden="true"></div>
@@ -103,11 +103,22 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div>
-              <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight text-[#0066B2]" lang="hi">हमारा वादा उत्पादन में सबसे ज्यादा.</h1>
-              <div class="mt-6 inline-flex flex-col items-start border-y-4 border-double border-[#F26522] py-3 pr-8">
+              <!-- Swapped: Logo placed as main visual header -->
+              <div class="mb-6">
+                <img src="logo.png" alt="Riddhi Siddhi Crop Care" class="h-16 sm:h-20 md:h-24 w-auto object-contain">
+              </div>
+
+              <!-- Established Section -->
+              <div class="mt-4 inline-flex flex-col items-start border-y-4 border-double border-[#F26522] py-3 pr-8">
                 <span class="established-label">Established</span>
                 <span class="established-date">25/04/2020</span>
               </div>
+
+              <!-- Swapped: Slogan placed directly under Established -->
+              <h1 class="text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight leading-tight text-[#0066B2] mt-6" lang="hi">
+                हमारा वादा उत्पादन में सबसे ज्यादा.
+              </h1>
+
               <p class="mt-4 text-slate-700 max-w-xl">Certified seed purity, research-backed crop yield, and nationwide farmer trust — delivering resilient seeds and crop protection solutions for sustainable food security.</p>
             <div class="mt-6 flex flex-wrap gap-3">
               <a href="#products" class="inline-flex items-center px-5 py-3 bg-[#F26522] text-white font-semibold rounded-md shadow hover:shadow-[0_0_18px_rgba(242,101,34,0.28)] transition">Explore Products</a>
@@ -130,7 +141,6 @@
           <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:-translate-y-1 hover:shadow-md transition-all">
             <div class="flex items-start gap-4">
               <div class="flex-shrink-0 bg-[#0066B2]/10 text-[#0066B2] rounded-xl p-3">
-                <!-- Seed icon -->
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C8 2 2 6 2 12s6 10 10 10 10-4 10-10S16 2 12 2z" stroke="#0066B2" stroke-width="1.2" fill="none"/></svg>
               </div>
               <div>
@@ -142,7 +152,6 @@
           <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:-translate-y-1 hover:shadow-md transition-all">
             <div class="flex items-start gap-4">
               <div class="flex-shrink-0 bg-[#0066B2]/10 text-[#0066B2] rounded-xl p-3">
-                <!-- Flask icon -->
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 2v6l-3 7h16l-3-7V2" stroke="#0066B2" stroke-width="1.2" fill="none"/></svg>
               </div>
               <div>
@@ -154,7 +163,6 @@
           <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:-translate-y-1 hover:shadow-md transition-all">
             <div class="flex items-start gap-4">
               <div class="flex-shrink-0 bg-[#0066B2]/10 text-[#0066B2] rounded-xl p-3">
-                <!-- Truck icon -->
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 13h13v6H3zM16 8h4l1 5h-5z" stroke="#0066B2" stroke-width="1.2" fill="none"/></svg>
               </div>
               <div>
@@ -166,7 +174,6 @@
           <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:-translate-y-1 hover:shadow-md transition-all">
             <div class="flex items-start gap-4">
               <div class="flex-shrink-0 bg-[#0066B2]/10 text-[#0066B2] rounded-xl p-3">
-                <!-- Award icon -->
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l2.5 6L21 9l-5 4 1.5 6L12 17l-5.5 2L8 13 3 9l6.5-1L12 2z" stroke="#0066B2" stroke-width="1.2" fill="none"/></svg>
               </div>
               <div>
@@ -383,8 +390,6 @@
               </div>
             </div>
           </div>
-
-          
         </div>
       </div>
     </section>
