@@ -7,7 +7,7 @@
   <meta name="description" content="Precision Crop Protection & High-Yield Hybrid Seeds" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
   <script>
     // Tailwind CDN with custom theme
     tailwind.config = {
@@ -31,7 +31,7 @@
     }
   </script>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="styles.css?v=2.0">
+  <link rel="stylesheet" href="styles.css?v=3.0">
 </head>
 <body class="bg-slate-50/50 text-slate-600 font-sans relative">
   <div id="ambient-bg" aria-hidden="true"></div>
@@ -95,34 +95,43 @@
   </aside>
 
   <main class="pt-20">
-    <!-- Hero -->
+    <!-- Hero Section -->
     <section id="home" class="relative overflow-hidden">
       <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
         <div class="h-full w-full bg-gradient-to-br from-transparent via-[rgba(0,102,178,0.06)] to-transparent mix-blend-overlay"></div>
       </div>
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-            <div>
-              <!-- Swapped: Logo placed as main visual header -->
-              <div class="mb-6">
-                <img src="logo.png" alt="Riddhi Siddhi Crop Care" class="h-16 sm:h-20 md:h-24 w-auto object-contain">
+          <div>
+            <!-- Header Row: Scaled Logo + Compact Pill-style Established Badge -->
+            <div class="flex flex-wrap items-center gap-4 sm:gap-6 mb-8">
+              <img src="logo.png" alt="Riddhi Siddhi Crop Care" class="h-28 sm:h-36 md:h-40 w-auto object-contain">
+              
+              <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full border border-[#F26522] bg-slate-50/80 shadow-sm">
+                <svg class="w-5 h-5 text-[#F26522] flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11zM7 11h5v5H7z"/>
+                </svg>
+                <div class="text-left leading-tight">
+                  <div class="text-[11px] font-bold text-slate-900 tracking-tight">Established</div>
+                  <div class="text-xs sm:text-sm font-extrabold text-[#0B1B3D]">25/04/2020</div>
+                </div>
               </div>
+            </div>
 
-              <!-- Established Section -->
-              <div class="mt-4 inline-flex flex-col items-start border-y-4 border-double border-[#F26522] py-3 pr-8">
-                <span class="established-label">Established</span>
-                <span class="established-date">25/04/2020</span>
-              </div>
+            <!-- Two-Tone Slogan with Underline Accent -->
+            <h1 class="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight leading-tight mb-6" lang="hi">
+              <span class="text-[#0B1B3D]">हमारा वादा उत्पादन में </span>
+              <span class="text-[#F26522] relative inline-block">
+                सबसे ज्यादा.
+                <span class="absolute left-0 bottom-[-4px] w-full h-[4px] bg-[#F26522] rounded-full"></span>
+              </span>
+            </h1>
 
-              <!-- Swapped: Slogan placed directly under Established -->
-              <h1 class="text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight leading-tight text-[#0066B2] mt-6" lang="hi">
-                हमारा वादा उत्पादन में सबसे ज्यादा.
-              </h1>
-
-              <p class="mt-4 text-slate-700 max-w-xl">Certified seed purity, research-backed crop yield, and nationwide farmer trust — delivering resilient seeds and crop protection solutions for sustainable food security.</p>
-            <div class="mt-6 flex flex-wrap gap-3">
-              <a href="#products" class="inline-flex items-center px-5 py-3 bg-[#F26522] text-white font-semibold rounded-md shadow hover:shadow-[0_0_18px_rgba(242,101,34,0.28)] transition">Explore Products</a>
-              <a href="#story" class="inline-flex items-center px-5 py-3 border-2 border-[#0066B2] text-[#0066B2] rounded-md hover:bg-[rgba(0,102,178,0.2)] transition">Our Story</a>
+            <p class="mt-6 text-slate-700 max-w-xl text-base sm:text-lg leading-relaxed">Certified seed purity, research-backed crop yield, and nationwide farmer trust — delivering resilient seeds and crop protection solutions for sustainable food security.</p>
+            
+            <div class="mt-8 flex flex-wrap gap-4">
+              <a href="#products" class="inline-flex items-center px-6 py-3.5 bg-[#F26522] text-white font-bold rounded-xl shadow-md hover:shadow-[0_0_20px_rgba(242,101,34,0.35)] transition-all">Explore Products</a>
+              <a href="#story" class="inline-flex items-center px-6 py-3.5 border-2 border-[#0066B2] text-[#0066B2] font-bold rounded-xl hover:bg-[rgba(0,102,178,0.08)] transition-all">Our Story</a>
             </div>
           </div>
           <div class="relative">
@@ -352,21 +361,21 @@
               <h3 class="font-semibold text-slate-950">Key Milestones</h3>
               <ol class="mt-4 space-y-4">
                 <li class="flex items-start gap-4">
-                  <div class="w-8 h-8 rounded-full bg-ocean flex items-center justify-center font-bold">—</div>
+                  <div class="w-8 h-8 rounded-full bg-ocean text-white flex items-center justify-center font-bold text-xs">2020</div>
                   <div>
                     <div class="font-semibold text-slate-900">Foundation</div>
                     <div class="text-sm text-slate-700">Established on 25/04/2020.</div>
                   </div>
                 </li>
                 <li class="flex items-start gap-4">
-                  <div class="w-8 h-8 rounded-full bg-ocean flex items-center justify-center font-bold">2015</div>
+                  <div class="w-8 h-8 rounded-full bg-ocean text-white flex items-center justify-center font-bold text-xs">2022</div>
                   <div>
                     <div class="font-semibold text-slate-900">Infrastructure</div>
                     <div class="text-sm text-slate-700">Expanded R&D labs and cold storage capacity.</div>
                   </div>
                 </li>
                 <li class="flex items-start gap-4">
-                  <div class="w-8 h-8 rounded-full bg-ocean flex items-center justify-center font-bold">2022</div>
+                  <div class="w-8 h-8 rounded-full bg-ocean text-white flex items-center justify-center font-bold text-xs">2024</div>
                   <div>
                     <div class="font-semibold text-slate-900">National Reach</div>
                     <div class="text-sm text-slate-700">Distributor network across multiple states, serving thousands of farmers.</div>
@@ -472,7 +481,7 @@
           <div class="space-y-4">
             <div class="p-5 rounded-2xl bg-white border border-slate-200 shadow-sm">
               <h3 class="font-bold text-[#0066B2] text-lg">Corporate Office</h3>
-              <p class="text-sm text-slate-700 mt-2">Survcy No. 303/A Block, Sri Devi Kalyan Estate, Kyan Tower, Yapral, Jawaharnagar</p>
+              <p class="text-sm text-slate-700 mt-2">Survey No. 303/A Block, Sri Devi Kalyan Estate, Kyan Tower, Yapral, Jawaharnagar</p>
               <p class="text-sm mt-2">Phone: <a href="tel:+917013267292" class="text-[#0066B2] hover:underline">7013267292</a></p>
               <p class="text-sm mt-1">Email: <a href="mailto:riddisidhicropcare@gmail.com" class="text-[#0066B2] hover:underline">riddisidhicropcare@gmail.com</a></p>
               <div class="mt-3 h-48 rounded overflow-hidden border border-slate-200">
