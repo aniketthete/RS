@@ -1,0 +1,587 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>RIDDHI SIDDHI CROP CARE PRIVATE LIMITED</title>
+  <meta name="description" content="Precision Crop Protection & High-Yield Hybrid Seeds" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <script>
+    // Tailwind CDN with custom theme
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            ocean: {
+              DEFAULT: '#0066B2'
+            },
+            sun: {
+              DEFAULT: '#F26522'
+            },
+            sitebg: '#0B100D'
+          },
+          fontFamily: {
+            sans: ['Inter', 'ui-sans-serif', 'system-ui']
+          }
+        }
+      }
+    }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-slate-50/50 text-slate-600 font-sans relative">
+  <div id="ambient-bg" aria-hidden="true"></div>
+
+  <!-- Header -->
+  <header class="fixed top-0 left-0 right-0 z-40">
+    <nav class="sticky top-0 z-50 bg-slate-900/90 backdrop-blur-md border-b border-slate-800 text-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between px-4 py-3 md:h-16">
+          <div class="flex items-center gap-4">
+            <div class="flex items-center gap-3">
+              <img src="logo.png" alt="Riddhi Siddhi Crop Care Logo" class="h-9 md:h-12 w-auto object-contain">
+            </div>
+          </div>
+          <div class="hidden md:flex items-center gap-6">
+            <a href="#home" class="text-slate-300 hover:text-[#F26522] transition font-medium text-sm">Home</a>
+            <a href="#story" class="text-slate-300 hover:text-[#F26522] transition font-medium text-sm">Our Story</a>
+            <a href="#products" class="text-slate-300 hover:text-[#F26522] transition font-medium text-sm">Products</a>
+            <a href="#strengths" class="text-slate-300 hover:text-[#F26522] transition font-medium text-sm">Strengths</a>
+            <a href="#investors" class="text-slate-300 hover:text-[#F26522] transition font-medium text-sm">Investors</a>
+            <a href="#media" class="text-slate-300 hover:text-[#F26522] transition font-medium text-sm">Media & Insights</a>
+            <a href="#contact" class="text-slate-300 hover:text-[#F26522] transition font-medium text-sm">Contact Us</a>
+          </div>
+          <div class="flex items-center gap-2">
+            <button id="dealerBtnTop" class="inline-flex items-center text-xs md:text-sm px-3 md:px-4 py-1.5 md:py-2 bg-[#F26522] text-white font-medium md:font-bold rounded-md hover:shadow-[0_0_20px_rgba(242,101,34,0.4)] focus:outline-none">Dealer Inquiry</button>
+            <button id="menu-toggle-btn" class="md:hidden p-2 rounded-xl bg-slate-800/80 border border-slate-700 text-slate-200 hover:text-white hover:bg-slate-700 transition active:scale-95" type="button" aria-label="Open menu" aria-controls="mobile-menu" aria-expanded="false">
+              <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" /></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div id="menu-backdrop" class="fixed inset-0 bg-slate-950/60 backdrop-blur-sm z-40 hidden opacity-0 transition-opacity duration-300" aria-hidden="true"></div>
+  <aside id="mobile-menu" class="fixed inset-y-0 right-0 w-[280px] sm:w-[320px] bg-slate-900/95 backdrop-blur-xl border-l border-slate-800 shadow-2xl z-50 transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col justify-between p-6" aria-label="Mobile navigation" aria-hidden="true">
+    <div>
+      <div class="flex items-center justify-between mb-8">
+        <div class="flex items-center gap-3">
+          <div class="h-10 w-10 rounded-xl bg-[#F26522] text-white flex items-center justify-center font-extrabold">RS</div>
+          <span class="text-sm font-bold text-white">RIDDHI SIDDHI CROP CARE PRIVATE LIMITED</span>
+        </div>
+        <button id="menu-close-btn" class="text-slate-400 hover:text-white p-2 rounded-lg bg-slate-800/60 transition" type="button" aria-label="Close menu">
+          <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18" stroke-linecap="round" /></svg>
+        </button>
+      </div>
+      <nav class="space-y-1" aria-label="Mobile navigation links">
+        <a href="#home" class="mobile-menu-link block py-3 px-4 rounded-xl text-base font-semibold text-slate-200 hover:text-white hover:bg-white/10 hover:translate-x-1 transition-all duration-200">Home</a>
+        <a href="#story" class="mobile-menu-link block py-3 px-4 rounded-xl text-base font-semibold text-slate-200 hover:text-white hover:bg-white/10 hover:translate-x-1 transition-all duration-200">Our Story</a>
+        <a href="#products" class="mobile-menu-link block py-3 px-4 rounded-xl text-base font-semibold text-slate-200 hover:text-white hover:bg-white/10 hover:translate-x-1 transition-all duration-200">Products</a>
+        <a href="#strengths" class="mobile-menu-link block py-3 px-4 rounded-xl text-base font-semibold text-slate-200 hover:text-white hover:bg-white/10 hover:translate-x-1 transition-all duration-200">Strengths</a>
+        <a href="#investors" class="mobile-menu-link block py-3 px-4 rounded-xl text-base font-semibold text-slate-200 hover:text-white hover:bg-white/10 hover:translate-x-1 transition-all duration-200">Investors</a>
+        <a href="#media" class="mobile-menu-link block py-3 px-4 rounded-xl text-base font-semibold text-slate-200 hover:text-white hover:bg-white/10 hover:translate-x-1 transition-all duration-200">Media &amp; Insights</a>
+        <a href="#contact" class="mobile-menu-link block py-3 px-4 rounded-xl text-base font-semibold text-slate-200 hover:text-white hover:bg-white/10 hover:translate-x-1 transition-all duration-200">Contact Us</a>
+      </nav>
+    </div>
+    <div>
+      <button id="dealerBtnMobile" class="w-full py-3 rounded-xl bg-[#F26522] text-white font-bold text-center shadow-lg hover:bg-[#e05616] transition" type="button">Dealer Inquiry</button>
+      <a href="mailto:riddisidhicropcare@gmail.com" class="text-xs text-slate-400 mt-4 text-center block">riddisidhicropcare@gmail.com</a>
+    </div>
+  </aside>
+
+  <main class="pt-20">
+    <!-- Hero -->
+    <section id="home" class="relative overflow-hidden">
+      <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
+        <div class="h-full w-full bg-gradient-to-br from-transparent via-[rgba(0,102,178,0.06)] to-transparent mix-blend-overlay"></div>
+      </div>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div>
+              <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight text-[#0066B2]" lang="hi">हमारा वादा उत्पादन में सबसे ज्यादा.</h1>
+              <div class="mt-6 inline-flex flex-col items-start border-y-4 border-double border-[#F26522] py-3 pr-8">
+                <span class="established-label">Established</span>
+                <span class="established-date">25/04/2020</span>
+              </div>
+              <p class="mt-4 text-slate-700 max-w-xl">Certified seed purity, research-backed crop yield, and nationwide farmer trust — delivering resilient seeds and crop protection solutions for sustainable food security.</p>
+            <div class="mt-6 flex flex-wrap gap-3">
+              <a href="#products" class="inline-flex items-center px-5 py-3 bg-[#F26522] text-white font-semibold rounded-md shadow hover:shadow-[0_0_18px_rgba(242,101,34,0.28)] transition">Explore Products</a>
+              <a href="#story" class="inline-flex items-center px-5 py-3 border-2 border-[#0066B2] text-[#0066B2] rounded-md hover:bg-[rgba(0,102,178,0.2)] transition">Our Story</a>
+            </div>
+          </div>
+          <div class="relative">
+              <!-- Image place held empty here -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Core Strengths & Capabilities -->
+    <section id="core-strengths" class="py-16 md:py-24 border-t border-slate-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-2xl md:text-3xl font-bold tracking-tight text-slate-900 mb-3">Our Core Strengths & Capabilities</h2>
+        <p class="text-slate-700 max-w-2xl mx-auto mb-8">Delivering excellence across quality assurance, R&amp;D, supply chain and industry recognition — designed for farmer impact.</p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+          <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:-translate-y-1 hover:shadow-md transition-all">
+            <div class="flex items-start gap-4">
+              <div class="flex-shrink-0 bg-[#0066B2]/10 text-[#0066B2] rounded-xl p-3">
+                <!-- Seed icon -->
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C8 2 2 6 2 12s6 10 10 10 10-4 10-10S16 2 12 2z" stroke="#0066B2" stroke-width="1.2" fill="none"/></svg>
+              </div>
+              <div>
+                <div class="font-semibold text-slate-950">Quality Assurance & Lab Certifications</div>
+                <div class="text-sm text-slate-700 mt-1">Certified seed purity and accredited testing facilities.</div>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:-translate-y-1 hover:shadow-md transition-all">
+            <div class="flex items-start gap-4">
+              <div class="flex-shrink-0 bg-[#0066B2]/10 text-[#0066B2] rounded-xl p-3">
+                <!-- Flask icon -->
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 2v6l-3 7h16l-3-7V2" stroke="#0066B2" stroke-width="1.2" fill="none"/></svg>
+              </div>
+              <div>
+                <div class="font-semibold text-slate-950">R&D & Rigorous Field Trials</div>
+                <div class="text-sm text-slate-700 mt-1">Continuous varietal improvement through multi-location trials.</div>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:-translate-y-1 hover:shadow-md transition-all">
+            <div class="flex items-start gap-4">
+              <div class="flex-shrink-0 bg-[#0066B2]/10 text-[#0066B2] rounded-xl p-3">
+                <!-- Truck icon -->
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 13h13v6H3zM16 8h4l1 5h-5z" stroke="#0066B2" stroke-width="1.2" fill="none"/></svg>
+              </div>
+              <div>
+                <div class="font-semibold text-slate-950">Nationwide Supply Chain & Cold Storage</div>
+                <div class="text-sm text-slate-700 mt-1">Integrated logistics ensuring seed viability and timely delivery.</div>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:-translate-y-1 hover:shadow-md transition-all">
+            <div class="flex items-start gap-4">
+              <div class="flex-shrink-0 bg-[#0066B2]/10 text-[#0066B2] rounded-xl p-3">
+                <!-- Award icon -->
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l2.5 6L21 9l-5 4 1.5 6L12 17l-5.5 2L8 13 3 9l6.5-1L12 2z" stroke="#0066B2" stroke-width="1.2" fill="none"/></svg>
+              </div>
+              <div>
+                <div class="font-semibold text-slate-950">Awards & Industry Recognitions</div>
+                <div class="text-sm text-slate-700 mt-1">Recognized for innovation in seed technology and farmer impact.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products -->
+    <section id="products">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight mb-3 text-center">Our High-Yield Seed Portfolio</h2>
+        <p class="text-slate-600 text-sm md:text-base max-w-2xl mx-auto text-center mb-10">Research-backed hybrid seeds engineered for disease resistance, vigorous growth, and superior market yields.</p>
+        <div class="flex flex-wrap justify-center gap-2 mb-8" role="tablist" aria-label="Product categories">
+          <button type="button" data-filter="all" class="filter-btn px-4 py-2 text-sm font-semibold rounded-full bg-[#0066B2] text-white" role="tab" aria-selected="true">All Varieties</button>
+          <button type="button" data-filter="gourds-vine" class="filter-btn px-4 py-2 text-sm font-semibold rounded-full bg-white border border-slate-200 text-slate-600" role="tab" aria-selected="false">Gourds &amp; Vine Crops</button>
+          <button type="button" data-filter="okra-chilli" class="filter-btn px-4 py-2 text-sm font-semibold rounded-full bg-white border border-slate-200 text-slate-600" role="tab" aria-selected="false">Okra &amp; Chilli</button>
+          <button type="button" data-filter="roots-vegetables" class="filter-btn px-4 py-2 text-sm font-semibold rounded-full bg-white border border-slate-200 text-slate-600" role="tab" aria-selected="false">Roots &amp; Vegetables</button>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-7xl mx-auto px-4" id="productGrid">
+          <article class="product-card bg-white rounded-2xl border border-slate-200/90 p-4 shadow-sm hover:shadow-xl hover:border-[#0066B2]/40 hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group" data-category="roots-vegetables">
+            <div>
+              <div class="w-full aspect-[3/4] max-h-64 bg-slate-50 rounded-xl overflow-hidden mb-4 border border-slate-100 flex items-center justify-center relative">
+                <img src="images/yodha-1523.jpeg" alt="YODHA 1523" class="w-full h-full object-contain p-2 group-hover:scale-105 transition-transform duration-300" loading="lazy">
+                <span class="absolute top-2 right-2 bg-[#0066B2]/90 text-white text-[11px] font-semibold px-2.5 py-0.5 rounded-full shadow-sm">Snow-White Curd</span>
+              </div>
+              <h3 class="text-lg font-bold text-slate-900 group-hover:text-[#0066B2] transition line-clamp-1">YODHA 1523</h3>
+              <span class="text-xs font-semibold text-[#0066B2] mb-1.5 block">Cauliflower (F1 Hybrid)</span>
+              <p class="text-xs text-slate-600 leading-relaxed line-clamp-2 mb-4">Dense, compact white curds with superior self-covering foliage and high market yield.</p>
+            </div>
+            <button type="button" onclick="openInquiryModal('YODHA 1523')" class="w-full py-2.5 px-4 rounded-xl bg-[#F26522] hover:bg-[#d95316] text-white font-bold text-xs shadow-sm hover:shadow-md transition-all duration-200">Inquire This Seed</button>
+          </article>
+          <article class="product-card bg-white rounded-2xl border border-slate-200/90 p-4 shadow-sm hover:shadow-xl hover:border-[#0066B2]/40 hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group" data-category="gourds-vine">
+            <div>
+              <div class="w-full aspect-[3/4] max-h-64 bg-slate-50 rounded-xl overflow-hidden mb-4 border border-slate-100 flex items-center justify-center relative">
+                <img src="images/raj-laxmi.jpeg" alt="RAJ LAXMI" class="w-full h-full object-contain p-2 group-hover:scale-105 transition-transform duration-300" loading="lazy">
+                <span class="absolute top-2 right-2 bg-[#0066B2]/90 text-white text-[11px] font-semibold px-2.5 py-0.5 rounded-full shadow-sm">Crisp &amp; Vigorous</span>
+              </div>
+              <h3 class="text-lg font-bold text-slate-900 group-hover:text-[#0066B2] transition line-clamp-1">RAJ LAXMI</h3>
+              <span class="text-xs font-semibold text-[#0066B2] mb-1.5 block">Cucumber / Kheera (F1 Hybrid)</span>
+              <p class="text-xs text-slate-600 leading-relaxed line-clamp-2 mb-4">Uniform straight cylindrical dark-green fruits with crisp edible texture and heavy continuous flushes.</p>
+            </div>
+            <button type="button" onclick="openInquiryModal('RAJ LAXMI')" class="w-full py-2.5 px-4 rounded-xl bg-[#F26522] hover:bg-[#d95316] text-white font-bold text-xs shadow-sm hover:shadow-md transition-all duration-200">Inquire This Seed</button>
+          </article>
+          <article class="product-card bg-white rounded-2xl border border-slate-200/90 p-4 shadow-sm hover:shadow-xl hover:border-[#0066B2]/40 hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group" data-category="okra-chilli">
+            <div>
+              <div class="w-full aspect-[3/4] max-h-64 bg-slate-50 rounded-xl overflow-hidden mb-4 border border-slate-100 flex items-center justify-center relative">
+                <img src="images/radhika-gold.jpeg" alt="RADHIKA GOLD" class="w-full h-full object-contain p-2 group-hover:scale-105 transition-transform duration-300" loading="lazy">
+                <span class="absolute top-2 right-2 bg-[#0066B2]/90 text-white text-[11px] font-semibold px-2.5 py-0.5 rounded-full shadow-sm">YVMV Resistant</span>
+              </div>
+              <h3 class="text-lg font-bold text-slate-900 group-hover:text-[#0066B2] transition line-clamp-1">RADHIKA GOLD</h3>
+              <span class="text-xs font-semibold text-[#0066B2] mb-1.5 block">Okra / Bhendi (F1 Hybrid)</span>
+              <p class="text-xs text-slate-600 leading-relaxed line-clamp-2 mb-4">Attractive dark-green tender 5-ridged pods with short internodes and high disease resistance.</p>
+            </div>
+            <button type="button" onclick="openInquiryModal('RADHIKA GOLD')" class="w-full py-2.5 px-4 rounded-xl bg-[#F26522] hover:bg-[#d95316] text-white font-bold text-xs shadow-sm hover:shadow-md transition-all duration-200">Inquire This Seed</button>
+          </article>
+          <article class="product-card bg-white rounded-2xl border border-slate-200/90 p-4 shadow-sm hover:shadow-xl hover:border-[#0066B2]/40 hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group" data-category="okra-chilli">
+            <div>
+              <div class="w-full aspect-[3/4] max-h-64 bg-slate-50 rounded-xl overflow-hidden mb-4 border border-slate-100 flex items-center justify-center relative">
+                <img src="images/raj-nandini.jpeg" alt="RAJ NANDINI" class="w-full h-full object-contain p-2 group-hover:scale-105 transition-transform duration-300" loading="lazy">
+                <span class="absolute top-2 right-2 bg-[#0066B2]/90 text-white text-[11px] font-semibold px-2.5 py-0.5 rounded-full shadow-sm">Slender Dark Green</span>
+              </div>
+              <h3 class="text-lg font-bold text-slate-900 group-hover:text-[#0066B2] transition line-clamp-1">RAJ NANDINI</h3>
+              <span class="text-xs font-semibold text-[#0066B2] mb-1.5 block">Okra / Bhendi (F1 Hybrid)</span>
+              <p class="text-xs text-slate-600 leading-relaxed line-clamp-2 mb-4">Glossy, slender pods with minimal fiber development, high disease resistance, and outstanding market appeal.</p>
+            </div>
+            <button type="button" onclick="openInquiryModal('RAJ NANDINI')" class="w-full py-2.5 px-4 rounded-xl bg-[#F26522] hover:bg-[#d95316] text-white font-bold text-xs shadow-sm hover:shadow-md transition-all duration-200">Inquire This Seed</button>
+          </article>
+          <article class="product-card bg-white rounded-2xl border border-slate-200/90 p-4 shadow-sm hover:shadow-xl hover:border-[#0066B2]/40 hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group" data-category="gourds-vine">
+            <div>
+              <div class="w-full aspect-[3/4] max-h-64 bg-slate-50 rounded-xl overflow-hidden mb-4 border border-slate-100 flex items-center justify-center relative">
+                <img src="images/paras-mani.jpeg" alt="PARAS MANI" class="w-full h-full object-contain p-2 group-hover:scale-105 transition-transform duration-300" loading="lazy">
+                <span class="absolute top-2 right-2 bg-[#0066B2]/90 text-white text-[11px] font-semibold px-2.5 py-0.5 rounded-full shadow-sm">Deep Spined</span>
+              </div>
+              <h3 class="text-lg font-bold text-slate-900 group-hover:text-[#0066B2] transition line-clamp-1">PARAS MANI</h3>
+              <span class="text-xs font-semibold text-[#0066B2] mb-1.5 block">Bitter Gourd / Karela (F1 Hybrid)</span>
+              <p class="text-xs text-slate-600 leading-relaxed line-clamp-2 mb-4">Dark green, sharply spined medium-long fruits with thick flesh and long post-harvest shelf life.</p>
+            </div>
+            <button type="button" onclick="openInquiryModal('PARAS MANI')" class="w-full py-2.5 px-4 rounded-xl bg-[#F26522] hover:bg-[#d95316] text-white font-bold text-xs shadow-sm hover:shadow-md transition-all duration-200">Inquire This Seed</button>
+          </article>
+          <article class="product-card bg-white rounded-2xl border border-slate-200/90 p-4 shadow-sm hover:shadow-xl hover:border-[#0066B2]/40 hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group" data-category="gourds-vine">
+            <div>
+              <div class="w-full aspect-[3/4] max-h-64 bg-slate-50 rounded-xl overflow-hidden mb-4 border border-slate-100 flex items-center justify-center relative">
+                <img src="images/nanha-munna.jpeg" alt="NANHA MUNNA" class="w-full h-full object-contain p-2 group-hover:scale-105 transition-transform duration-300" loading="lazy">
+                <span class="absolute top-2 right-2 bg-[#0066B2]/90 text-white text-[11px] font-semibold px-2.5 py-0.5 rounded-full shadow-sm">High Market Price</span>
+              </div>
+              <h3 class="text-lg font-bold text-slate-900 group-hover:text-[#0066B2] transition line-clamp-1">NANHA MUNNA</h3>
+              <span class="text-xs font-semibold text-[#0066B2] mb-1.5 block">Small Bitter Gourd (F1 Hybrid)</span>
+              <p class="text-xs text-slate-600 leading-relaxed line-clamp-2 mb-4">High-value small prickly bitter gourd with prolific bearing and rapid harvest cycles.</p>
+            </div>
+            <button type="button" onclick="openInquiryModal('NANHA MUNNA')" class="w-full py-2.5 px-4 rounded-xl bg-[#F26522] hover:bg-[#d95316] text-white font-bold text-xs shadow-sm hover:shadow-md transition-all duration-200">Inquire This Seed</button>
+          </article>
+          <article class="product-card bg-white rounded-2xl border border-slate-200/90 p-4 shadow-sm hover:shadow-xl hover:border-[#0066B2]/40 hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group" data-category="gourds-vine">
+            <div>
+              <div class="w-full aspect-[3/4] max-h-64 bg-slate-50 rounded-xl overflow-hidden mb-4 border border-slate-100 flex items-center justify-center relative">
+                <img src="images/sundari.jpeg" alt="SUNDARI" class="w-full h-full object-contain p-2 group-hover:scale-105 transition-transform duration-300" loading="lazy">
+                <span class="absolute top-2 right-2 bg-[#0066B2]/90 text-white text-[11px] font-semibold px-2.5 py-0.5 rounded-full shadow-sm">Straight &amp; Uniform</span>
+              </div>
+              <h3 class="text-lg font-bold text-slate-900 group-hover:text-[#0066B2] transition line-clamp-1">SUNDARI</h3>
+              <span class="text-xs font-semibold text-[#0066B2] mb-1.5 block">Ridge Gourd / Turai (F1 Hybrid)</span>
+              <p class="text-xs text-slate-600 leading-relaxed line-clamp-2 mb-4">Straight, deep-ridged tender green fruits with soft interior pulp and extended fruiting periods.</p>
+            </div>
+            <button type="button" onclick="openInquiryModal('SUNDARI')" class="w-full py-2.5 px-4 rounded-xl bg-[#F26522] hover:bg-[#d95316] text-white font-bold text-xs shadow-sm hover:shadow-md transition-all duration-200">Inquire This Seed</button>
+          </article>
+          <article class="product-card bg-white rounded-2xl border border-slate-200/90 p-4 shadow-sm hover:shadow-xl hover:border-[#0066B2]/40 hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group" data-category="gourds-vine">
+            <div>
+              <div class="w-full aspect-[3/4] max-h-64 bg-slate-50 rounded-xl overflow-hidden mb-4 border border-slate-100 flex items-center justify-center relative">
+                <img src="images/atharv.jpeg" alt="ATHARV" class="w-full h-full object-contain p-2 group-hover:scale-105 transition-transform duration-300" loading="lazy">
+                <span class="absolute top-2 right-2 bg-[#0066B2]/90 text-white text-[11px] font-semibold px-2.5 py-0.5 rounded-full shadow-sm">Continuous Fruiting</span>
+              </div>
+              <h3 class="text-lg font-bold text-slate-900 group-hover:text-[#0066B2] transition line-clamp-1">ATHARV</h3>
+              <span class="text-xs font-semibold text-[#0066B2] mb-1.5 block">Sponge Gourd / Gilki (F1 Hybrid)</span>
+              <p class="text-xs text-slate-600 leading-relaxed line-clamp-2 mb-4">Smooth, straight light-green cylindrical fruits with high disease tolerance and persistent harvest flushes.</p>
+            </div>
+            <button type="button" onclick="openInquiryModal('ATHARV')" class="w-full py-2.5 px-4 rounded-xl bg-[#F26522] hover:bg-[#d95316] text-white font-bold text-xs shadow-sm hover:shadow-md transition-all duration-200">Inquire This Seed</button>
+          </article>
+          <article class="product-card bg-white rounded-2xl border border-slate-200/90 p-4 shadow-sm hover:shadow-xl hover:border-[#0066B2]/40 hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group" data-category="roots-vegetables">
+            <div>
+              <div class="w-full aspect-[3/4] max-h-64 bg-slate-50 rounded-xl overflow-hidden mb-4 border border-slate-100 flex items-center justify-center relative">
+                <img src="images/milky-white.jpeg" alt="MILKY WHITE" class="w-full h-full object-contain p-2 group-hover:scale-105 transition-transform duration-300" loading="lazy">
+                <span class="absolute top-2 right-2 bg-[#0066B2]/90 text-white text-[11px] font-semibold px-2.5 py-0.5 rounded-full shadow-sm">Pure White Roots</span>
+              </div>
+              <h3 class="text-lg font-bold text-slate-900 group-hover:text-[#0066B2] transition line-clamp-1">MILKY WHITE</h3>
+              <span class="text-xs font-semibold text-[#0066B2] mb-1.5 block">Radish / Mooli (F1 Hybrid)</span>
+              <p class="text-xs text-slate-600 leading-relaxed line-clamp-2 mb-4">Smooth cylindrical snow-white roots with mild pungency, slow bolting, and minimal pithiness.</p>
+            </div>
+            <button type="button" onclick="openInquiryModal('MILKY WHITE')" class="w-full py-2.5 px-4 rounded-xl bg-[#F26522] hover:bg-[#d95316] text-white font-bold text-xs shadow-sm hover:shadow-md transition-all duration-200">Inquire This Seed</button>
+          </article>
+          <article class="product-card bg-white rounded-2xl border border-slate-200/90 p-4 shadow-sm hover:shadow-xl hover:border-[#0066B2]/40 hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group" data-category="roots-vegetables">
+            <div>
+              <div class="w-full aspect-[3/4] max-h-64 bg-slate-50 rounded-xl overflow-hidden mb-4 border border-slate-100 flex items-center justify-center relative">
+                <img src="images/super-30.jpeg" alt="SUPER 30" class="w-full h-full object-contain p-2 group-hover:scale-105 transition-transform duration-300" loading="lazy">
+                <span class="absolute top-2 right-2 bg-[#0066B2]/90 text-white text-[11px] font-semibold px-2.5 py-0.5 rounded-full shadow-sm">Fast Early Harvest</span>
+              </div>
+              <h3 class="text-lg font-bold text-slate-900 group-hover:text-[#0066B2] transition line-clamp-1">SUPER 30</h3>
+              <span class="text-xs font-semibold text-[#0066B2] mb-1.5 block">Radish / Mooli (F1 Hybrid)</span>
+              <p class="text-xs text-slate-600 leading-relaxed line-clamp-2 mb-4">Early-maturing uniform crisp white roots suited for high-density planting and rapid returns.</p>
+            </div>
+            <button type="button" onclick="openInquiryModal('SUPER 30')" class="w-full py-2.5 px-4 rounded-xl bg-[#F26522] hover:bg-[#d95316] text-white font-bold text-xs shadow-sm hover:shadow-md transition-all duration-200">Inquire This Seed</button>
+          </article>
+          <article class="product-card bg-white rounded-2xl border border-slate-200/90 p-4 shadow-sm hover:shadow-xl hover:border-[#0066B2]/40 hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group" data-category="okra-chilli">
+            <div>
+              <div class="w-full aspect-[3/4] max-h-64 bg-slate-50 rounded-xl overflow-hidden mb-4 border border-slate-100 flex items-center justify-center relative">
+                <img src="images/kargil-10.jpeg" alt="KARGIL 10" class="w-full h-full object-contain p-2 group-hover:scale-105 transition-transform duration-300" loading="lazy">
+                <span class="absolute top-2 right-2 bg-[#0066B2]/90 text-white text-[11px] font-semibold px-2.5 py-0.5 rounded-full shadow-sm">Dual Purpose</span>
+              </div>
+              <h3 class="text-lg font-bold text-slate-900 group-hover:text-[#0066B2] transition line-clamp-1">KARGIL 10</h3>
+              <span class="text-xs font-semibold text-[#0066B2] mb-1.5 block">Dual Chilli (F1 Hybrid)</span>
+              <p class="text-xs text-slate-600 leading-relaxed line-clamp-2 mb-4">Highly pungent prolific chilli suitable for dual use in both fresh green and cured dry red markets.</p>
+            </div>
+            <button type="button" onclick="openInquiryModal('KARGIL 10')" class="w-full py-2.5 px-4 rounded-xl bg-[#F26522] hover:bg-[#d95316] text-white font-bold text-xs shadow-sm hover:shadow-md transition-all duration-200">Inquire This Seed</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Story & Strengths -->
+    <section id="story" class="py-16 md:py-24 border-t border-slate-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <div class="lg:col-span-2">
+            <h2 class="text-2xl font-bold">Our Story</h2>
+            <p class="mt-3 text-slate-700">We are committed to sustainable agriculture, improving food security through high-quality seed genetics, rigorous field trials, and farmer-centric distribution networks.</p>
+
+            <div class="mt-6">
+              <h3 class="font-semibold text-slate-950">Mission & Vision</h3>
+              <p class="text-slate-700 mt-2">To deliver resilient, high-yielding seeds and integrated crop protection that empower farmers and enable sustainable food systems across India.</p>
+            </div>
+
+            <div class="mt-8">
+              <h3 class="font-semibold text-slate-950">Key Milestones</h3>
+              <ol class="mt-4 space-y-4">
+                <li class="flex items-start gap-4">
+                  <div class="w-8 h-8 rounded-full bg-ocean flex items-center justify-center font-bold">—</div>
+                  <div>
+                    <div class="font-semibold text-slate-900">Foundation</div>
+                    <div class="text-sm text-slate-700">Established on 25/04/2020.</div>
+                  </div>
+                </li>
+                <li class="flex items-start gap-4">
+                  <div class="w-8 h-8 rounded-full bg-ocean flex items-center justify-center font-bold">2015</div>
+                  <div>
+                    <div class="font-semibold text-slate-900">Infrastructure</div>
+                    <div class="text-sm text-slate-700">Expanded R&D labs and cold storage capacity.</div>
+                  </div>
+                </li>
+                <li class="flex items-start gap-4">
+                  <div class="w-8 h-8 rounded-full bg-ocean flex items-center justify-center font-bold">2022</div>
+                  <div>
+                    <div class="font-semibold text-slate-900">National Reach</div>
+                    <div class="text-sm text-slate-700">Distributor network across multiple states, serving thousands of farmers.</div>
+                  </div>
+                </li>
+              </ol>
+            </div>
+          </div>
+
+          <!-- Leadership / Director Card -->
+          <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm relative overflow-hidden mb-6">
+            <div class="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-[#0066B2] to-[#F26522]"></div>
+            <div class="flex items-start gap-4">
+              <div class="mt-2">
+                <div class="bg-orange-50 text-[#F26522] border border-[#F26522]/30 w-16 h-16 rounded-full flex items-center justify-center font-bold text-xl">IS</div>
+              </div>
+              <div>
+                <div class="text-xl font-bold text-slate-900">Imadabathuni Shekhar</div>
+                <div class="text-sm font-semibold text-[#0066B2]">Owner, RIDDHI SIDDHI CROP CARE PRIVATE LIMITED</div>
+                <p class="text-slate-700 italic border-l-4 border-[#0066B2] pl-4 my-3 text-sm leading-relaxed">Our mission at Riddhi Siddhi Crop Care is rooted in delivering purity, resilience, and maximum yield to every farmer across India. Through dedicated R&amp;D and certified hybrid seeds, we empower agricultural communities to achieve sustainable growth and food security.</p>
+              </div>
+            </div>
+          </div>
+
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- Video Carousel -->
+    <section id="media" class="py-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between">
+          <h2 class="text-2xl md:text-3xl font-bold tracking-tight text-slate-900 mb-8">Farmer & Dealer Testimonials</h2>
+          <div class="flex gap-2">
+            <button id="carouselPrev" class="p-2 bg-white border border-slate-200 rounded-md">◀</button>
+            <button id="carouselNext" class="p-2 bg-white border border-slate-200 rounded-md">▶</button>
+          </div>
+        </div>
+
+        <div class="mt-6">
+          <div id="testimonial-track" class="flex gap-4 overflow-x-auto snap-x snap-mandatory scroll-smooth pb-4 px-1 no-scrollbar">
+            <template id="testimonialTpl">
+              <div class="min-w-[85vw] max-w-[85vw] sm:min-w-[340px] snap-center bg-white border border-slate-200 rounded-2xl p-4 shadow-sm flex-shrink-0">
+                <div class="w-full aspect-video bg-slate-900 rounded-xl flex items-center justify-center text-white mb-3 relative font-medium">Video</div>
+                <div>
+                  <div class="text-base font-bold text-slate-900">Farmer Name</div>
+                  <div class="text-xs font-semibold text-[#0066B2]">State • Crop • +30% yield</div>
+                </div>
+              </div>
+            </template>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Dealer / Distributor Network -->
+    <section id="dealer-network" class="py-12 md:py-16 border-t border-slate-200 bg-slate-50/60">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mx-auto text-center mb-8">
+          <p class="text-xs font-semibold uppercase tracking-[0.18em] text-[#F26522]">Regional Coverage</p>
+          <h2 class="text-2xl md:text-3xl font-bold tracking-tight text-slate-900 mt-3">Dealer / Distributor Network</h2>
+          <p class="mt-3 text-slate-700">Our partnership network continues to expand across India, with active dealer and distributor opportunities in key agricultural states.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
+            <h3 class="font-bold text-slate-900 text-lg mb-4">Core markets</h3>
+            <ul class="grid grid-cols-2 sm:grid-cols-3 gap-3 text-sm text-slate-700">
+              <li class="bg-slate-50 rounded-lg px-3 py-2 border border-slate-200">Andhra Pradesh</li>
+              <li class="bg-slate-50 rounded-lg px-3 py-2 border border-slate-200">Telangana</li>
+              <li class="bg-slate-50 rounded-lg px-3 py-2 border border-slate-200">Odisha</li>
+              <li class="bg-slate-50 rounded-lg px-3 py-2 border border-slate-200">Rajasthan</li>
+              <li class="bg-slate-50 rounded-lg px-3 py-2 border border-slate-200">Uttar Pradesh</li>
+              <li class="bg-slate-50 rounded-lg px-3 py-2 border border-slate-200">Bihar</li>
+              <li class="bg-slate-50 rounded-lg px-3 py-2 border border-slate-200">West Bengal</li>
+              <li class="bg-slate-50 rounded-lg px-3 py-2 border border-slate-200">Maharashtra</li>
+              <li class="bg-slate-50 rounded-lg px-3 py-2 border border-slate-200">Chhattisgarh</li>
+            </ul>
+          </div>
+
+          <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
+            <h3 class="font-bold text-slate-900 text-lg mb-4">Partnership focus</h3>
+            <div class="space-y-3 text-sm text-slate-700">
+              <div class="rounded-xl border border-[#0066B2]/20 bg-[#0066B2]/5 p-3">
+                <span class="font-semibold text-[#0066B2]">Bihar</span> — expanding dealer and distributor outreach across key crop belts and farmer markets.
+              </div>
+              <div class="rounded-xl border border-[#0066B2]/20 bg-[#0066B2]/5 p-3">
+                <span class="font-semibold text-[#0066B2]">West Bengal</span> — active regional network support for vegetable seed and crop protection distribution.
+              </div>
+              <div class="rounded-xl border border-slate-200 bg-slate-50 p-3">
+                We welcome new dealer and distributor inquiries from additional states and districts for long-term agricultural partnerships.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Offices -->
+    <section id="contact" class="py-12 border-t border-slate-200 pb-20 md:pb-8">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-2xl md:text-3xl font-bold tracking-tight text-slate-900 mb-8">Contact & Offices</h2>
+        <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="space-y-4">
+            <div class="p-5 rounded-2xl bg-white border border-slate-200 shadow-sm">
+              <h3 class="font-bold text-[#0066B2] text-lg">Corporate Office</h3>
+              <p class="text-sm text-slate-700 mt-2">Survcy No. 303/A Block, Sri Devi Kalyan Estate, Kyan Tower, Yapral, Jawaharnagar</p>
+              <p class="text-sm mt-2">Phone: <a href="tel:+917013267292" class="text-[#0066B2] hover:underline">7013267292</a></p>
+              <p class="text-sm mt-1">Email: <a href="mailto:riddisidhicropcare@gmail.com" class="text-[#0066B2] hover:underline">riddisidhicropcare@gmail.com</a></p>
+              <div class="mt-3 h-48 rounded overflow-hidden border border-slate-200">
+                <iframe class="w-full h-full" loading="lazy" src="https://www.google.com/maps?q=303/A%20Block%2C%20Sri%20Devi%20Kalyan%20Estate%2C%20Kyan%20Tower%2C%20Yapral%2C%20Jawaharnagar&output=embed"></iframe>
+              </div>
+            </div>
+
+            <div class="p-5 rounded-2xl bg-white border border-slate-200 shadow-sm">
+              <h3 class="font-bold text-[#0066B2] text-lg">Registered Office — New Delhi</h3>
+              <p class="text-sm text-slate-700 mt-2">A-509, Sangam Vihar, New Delhi, India - 11062</p>
+              <p class="text-sm mt-2">Phone: <a href="tel:+917013267292" class="text-[#0066B2] hover:underline">7013267292</a></p>
+              <div class="mt-3 h-48 rounded overflow-hidden border border-slate-200">
+                <iframe class="w-full h-full" loading="lazy" src="https://www.google.com/maps?q=A-509%20Sangam%20Vihar%20New%20Delhi%2011062&output=embed"></iframe>
+              </div>
+            </div>
+          </div>
+
+          <div class="space-y-4">
+            <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm">
+              <h3 class="font-semibold text-slate-900">Dealer / Distributor Inquiry</h3>
+              <p class="text-sm text-slate-700 mt-2">Fill the form or click any product's Inquiry to get in touch.</p>
+              <button id="dealerBtn" class="mt-4 px-4 py-2 bg-[#F26522] text-white rounded font-semibold btn-primary">Open Inquiry Form</button>
+            </div>
+
+            <div class="p-4 rounded-2xl bg-white border border-slate-200 text-sm text-slate-700 shadow-sm">
+              <div class="font-semibold text-slate-900">Corporate Details</div>
+              <div class="mt-2">Owner: Imadabathuni Shekhar</div>
+              <div class="mt-1">Year of Establishment: 25/04/2020</div>
+              <div class="mt-1">Phone: <a href="tel:+917013267292" class="text-[#0066B2] hover:underline">7013267292</a></div>
+              <div class="mt-1">Official Email: <a href="mailto:riddisidhicropcare@gmail.com" class="text-[#0066B2] hover:underline">riddisidhicropcare@gmail.com</a></div>
+              <div class="mt-2">Statutory: Seeds & Crop-protection compliances upheld per regulations.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="mt-12 border-t border-slate-800 bg-slate-900 pb-24 text-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+        <div>
+          <div class="font-semibold">RIDDHI SIDDHI CROP CARE PRIVATE LIMITED</div>
+          <div class="text-sm text-slate-300">CIN: U29219DL2020PTC363441</div>
+          <div class="text-sm text-slate-300 mt-1">Owner: Imadabathuni Shekhar</div>
+          <div class="text-sm text-slate-300 mt-1">Phone: <a href="tel:+917013267292" class="text-sky-300 hover:text-white hover:underline">7013267292</a></div>
+          <div class="text-sm text-slate-300 mt-1">Email: <a href="mailto:riddisidhicropcare@gmail.com" class="text-sky-300 hover:text-white hover:underline">riddisidhicropcare@gmail.com</a></div>
+          <div class="text-sm text-slate-400 mt-2">© 2026 NFS-Private-Limited. All rights reserved.</div>
+        </div>
+        <div class="flex gap-4">
+          <a href="#" class="text-sm text-slate-300 hover:text-white">Privacy</a>
+          <a href="#" class="text-sm text-slate-300 hover:text-white">Terms</a>
+          <a href="#" class="text-sm text-slate-300 hover:text-white">Site Map</a>
+        </div>
+      </div>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-6 text-center">
+        <a href="https://wa.me/918237356641" target="_blank" rel="noopener noreferrer" class="text-sm font-semibold text-[#0066B2] hover:text-[#F26522] hover:underline transition">Made by NFS Services</a>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Dealer Inquiry Modal -->
+  <div id="inquiryModal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-slate-900/60 backdrop-blur-sm animate-in fade-in duration-200" role="dialog" aria-modal="true" aria-labelledby="inquiryModalTitle">
+    <div class="bg-white rounded-3xl shadow-2xl border border-slate-200/80 w-full max-w-lg overflow-hidden p-6 sm:p-8 relative">
+      <div class="bg-gradient-to-r from-[#0066B2] to-[#F26522] h-1.5 w-full absolute top-0 left-0" aria-hidden="true"></div>
+      <div class="flex items-start justify-between gap-4">
+        <div>
+          <h3 id="inquiryModalTitle" class="text-2xl font-bold text-slate-900 tracking-tight">Dealer &amp; Distributor Partnership</h3>
+          <p class="text-sm text-slate-500 mt-1 mb-6">Join Riddhi Siddhi's authorized distributor network. Our regional field manager will get in touch with you.</p>
+        </div>
+        <button id="modalClose" type="button" aria-label="Close inquiry form" class="text-slate-400 hover:text-slate-700 bg-slate-100 hover:bg-slate-200 p-2 rounded-full transition">
+          <svg class="w-5 h-5" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 5l10 10M15 5L5 15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" /></svg>
+        </button>
+      </div>
+      <form id="inquiryForm" class="grid grid-cols-1 gap-4">
+        <div>
+          <label for="inquiryName" class="text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1.5 block">Full Name</label>
+          <input id="inquiryName" name="name" placeholder="Enter your full name" required class="w-full px-4 py-3 rounded-xl border border-slate-300 bg-slate-50/50 text-slate-900 placeholder-slate-400 text-sm focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#0066B2] focus:border-transparent transition-all" />
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+          <div>
+            <label for="inquiryState" class="text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1.5 block">State</label>
+            <input id="inquiryState" name="state" placeholder="State" required class="w-full px-4 py-3 rounded-xl border border-slate-300 bg-slate-50/50 text-slate-900 placeholder-slate-400 text-sm focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#0066B2] focus:border-transparent transition-all" />
+          </div>
+          <div>
+            <label for="inquiryDistrict" class="text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1.5 block">District</label>
+            <input id="inquiryDistrict" name="district" placeholder="District" required class="w-full px-4 py-3 rounded-xl border border-slate-300 bg-slate-50/50 text-slate-900 placeholder-slate-400 text-sm focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#0066B2] focus:border-transparent transition-all" />
+          </div>
+        </div>
+        <div>
+          <label for="inquiryMobile" class="text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1.5 block">Mobile</label>
+          <input id="inquiryMobile" name="mobile" placeholder="Enter mobile number" required pattern="[0-9]{10,15}" class="w-full px-4 py-3 rounded-xl border border-slate-300 bg-slate-50/50 text-slate-900 placeholder-slate-400 text-sm focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#0066B2] focus:border-transparent transition-all" />
+        </div>
+        <div>
+          <label for="inquiryCategory" class="text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1.5 block">Seed Category</label>
+          <select id="inquiryCategory" name="category" required class="w-full px-4 py-3 rounded-xl border border-slate-300 bg-slate-50/50 text-slate-900 placeholder-slate-400 text-sm focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#0066B2] focus:border-transparent transition-all">
+            <option value="">Select Seed Category</option>
+            <option>F1 Hybrid Vegetables</option>
+            <option>F1 Hybrid Vegetables (Chilli/Cauliflower)</option>
+            <option>Both / General Dealership</option>
+          </select>
+        </div>
+        <div class="flex items-center justify-end gap-3 mt-2 pt-4 border-t border-slate-100">
+          <button type="button" id="modalCancel" class="px-5 py-2.5 rounded-xl border border-slate-200 text-slate-600 font-semibold text-sm hover:bg-slate-50 transition">Cancel</button>
+          <button type="submit" class="px-6 py-2.5 rounded-xl bg-[#F26522] text-white font-bold text-sm shadow-md hover:bg-[#e05616] hover:shadow-lg transition-all duration-200">Submit Inquiry</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- WhatsApp Widget -->
+  <a href="https://wa.me/917013267292" target="_blank" id="whatsappWidget" class="fixed bottom-6 right-6 z-50 w-12 h-12 md:w-14 md:h-14 rounded-full bg-[#25D366] flex items-center justify-center shadow-lg ring-4 ring-sun/30 animate-bounce hover:animate-none whatsapp-anim">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M20.52 3.48A11.84 11.84 0 0012 .5C5.65.5.99 5.16.99 11.5c0 2.03.53 3.98 1.54 5.69L.5 23.5l6.57-1.72A11.84 11.84 0 0012 23.5c6.35 0 11.01-4.66 11.01-11 0-3-1.22-5.81-3.49-7.02zM12 21.5c-1.76 0-3.46-.46-4.96-1.33l-.35-.2-3.9 1.02 1.02-3.78-.21-.36A9.35 9.35 0 012.5 11.5C2.5 6.81 6.31 3 11 3c4.69 0 8.5 3.81 8.5 8.5S15.69 20 11 20z"/></svg>
+  </a>
+
+  <script src="app.js"></script>
+</body>
+</html>
